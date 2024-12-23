@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GADGETHUB</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            color: #0277bd;
+        }
+        header, footer {
+            background-color: #01579b;
+            color: pink;
+        }
+        nav ul li a {
+            color: greenyellow;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #0277bd;
+            border-radius: 5px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product-item {
+            border: 1px solid #0277bd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex: 1 1 300px;
+            max-width: 300px;
+        }
+        .product-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product-item button {
+            background-color: #0277bd;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .product-item button:hover {
+            background-color: #01579b;
+        }
+        footer {
+            background-color: #01579b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        footer nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .contact-details {
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+        }
+        .contact-details p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GADGETHUB</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Electronics Store</h2>
+            <p>Find the best deals on the latest electronics.</p>
+        </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="./images/image copy 2.png" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>Latest model with advanced features.</p>
+                    <p>Price: ₹50,000</p>
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                    <button>Wishlist</button>
+                </div>
+                <div class="product-item">
+                    <img src="./images/1.png" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>High performance for work and play.</p>
+                    <p>Price: ₹70,000</p>
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                    <button>Wishlist</button>
+                </div>
+                <div class="product-item">
+                    <img src="./images/image copy.png" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>Stay connected on the go.</p>
+                    <p>Price: ₹15,000</p>
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                    <button>Wishlist</button>
+                </div>
+                <div class="product-item">
+                    <img src="./images/image copy 3.png" alt="Headphones">
+                    <h3>Headphones</h3>
+                    <p>Experience immersive sound quality.</p>
+                    <p>Price: ₹5,000</p>
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                    <button>Wishlist</button>
+                </div>
+                <div class="product-item">
+                    <img src="./images/2.png" alt="Tablet">
+                    <h3>Tablet</h3>
+                    <p>Portable and powerful.</p>
+                    <p>Price: ₹30,000</p>
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                    <button>Wishlist</button>
+                </div>
+                <div class="product-item">
+                    <img src="./images/3.png" alt="Camera">
+                    <h3>Camera</h3>
+                    <p>Capture your moments.</p>
+                    <p>Price: ₹40,000</p>
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                    <button>Wishlist</button>
+                </div>
+                <div class="product-item">
+                    <img src="./images/4.png" alt="Speaker">
+                    <h3>Speaker</h3>
+                    <p>High-quality sound.</p>
+                    <p>Price: ₹10,000</p>
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                    <button>Wishlist</button>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <p><strong>Email:</strong> charangujila@electronics.com</p>
+                <p><strong>Phone:</strong> +91 8247010445</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 GADGETHUB. All rights reserved.</p>
+            <div class="contact-details">
+                <p><strong>Email:</strong> charangujila@electronics.com</p>
+                <p><strong>Phone:</strong> +91 8247010445</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+   
